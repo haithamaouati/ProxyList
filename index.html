@@ -92,6 +92,7 @@ h1 {
   text-decoration: none;
   font-size: 1rem;
   transition: background 0.2s;
+  cursor: pointer;
 }
 
 .download-btn:hover {
@@ -124,13 +125,27 @@ footer {
       Lists of HTTP, SOCKS4, SOCKS5 proxies.<br>
       Updated every hour.
     </p><div class="buttons">
-  <a href="https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/all.txt" class="download-btn" target="_blank">All</a>
-  <a href="https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/http.txt" class="download-btn" target="_blank">HTTP</a>
-  <a href="https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/socks4.txt" class="download-btn" target="_blank">Socks4</a>
-  <a href="https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/socks5.txt" class="download-btn" target="_blank">Socks5</a>
+  <button class="download-btn" onclick="downloadFile('all')">All</button>
+  <button class="download-btn" onclick="downloadFile('http')">HTTP</button>
+  <button class="download-btn" onclick="downloadFile('socks4')">Socks4</button>
+  <button class="download-btn" onclick="downloadFile('socks5')">Socks5</button>
 </div>
 
   </main>  <footer>
     Made with &#x2665;&#xfe0f; by <a href="https://github.com/haithamaouati" target="_blank">Haitham Aouati</a>
-  </footer>
-</body></html>
+  </footer>  <script>
+    function downloadFile(type) {
+      const url = `https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/${type}.txt`;
+      fetch(url)
+        .then(res => res.blob())
+        .then(blob => {
+          const a = document.createElement('a');
+          a.href = URL.createObjectURL(blob);
+          a.download = `${type}.txt`;
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+        })
+        .catch(err => alert("Download failed."));
+    }
+  </script></body></html>
