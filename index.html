@@ -1,0 +1,136 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProxyList</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }html, body {
+  height: 100%;
+  background-color: #fbfbfb;
+  background-image: radial-gradient(#dcdcdc 1px, transparent 1px);
+  background-size: 16px 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  color: #343434;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+header .icons {
+  display: flex;
+  gap: 1rem;
+}
+
+header .icons a svg {
+  width: 24px;
+  height: 24px;
+  stroke: #343434;
+  stroke-width: 2;
+  fill: none;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.badge {
+  background: white;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.05rem;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 1.1rem;
+  max-width: 600px;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.download-btn {
+  background: #111;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.download-btn:hover {
+  background: #333;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+  </style>
+</head><body>
+  <header>
+    <div>ProxyList.</div>
+    <div class="icons">
+      <a href="https://t.me/haithamaouati" target="_blank" aria-label="Telegram">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 2L11 13"/><path d="M22 2L15 22L11 13L2 9L22 2Z"/></svg>
+      </a>
+      <a href="https://github.com/haithamaouati" target="_blank" aria-label="GitHub">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77 5.44 5.44 0 0 0 3.5 9.5c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 20.13V24"/></svg>
+      </a>
+    </div>
+  </header>  <main>
+    <div class="badge">Updated Every Hour ⚡️</div>
+    <h1>ProxyList.</h1>
+    <p class="subtitle">
+      Lists of HTTP, SOCKS4, SOCKS5 proxies.<br>
+      Updated every hour.
+    </p><div class="buttons">
+  <a href="https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/all.txt" class="download-btn" target="_blank">All</a>
+  <a href="https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/http.txt" class="download-btn" target="_blank">HTTP</a>
+  <a href="https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/socks4.txt" class="download-btn" target="_blank">Socks4</a>
+  <a href="https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/socks5.txt" class="download-btn" target="_blank">Socks5</a>
+</div>
+
+  </main>  <footer>
+    Made with &#x2665;&#xfe0f; by <a href="https://github.com/haithamaouati" target="_blank">Haitham Aouati</a>
+  </footer>
+</body></html>
