@@ -9,10 +9,11 @@ Lists of SOCKS4, SOCKS5, HTTP and HTTPS proxies. **Updated every hour**.
 </div>
 
 ## Proxy list
-- [x] All
-- [x] HTTP
+
 - [x] SOCKS4
 - [x] SOCKS5
+- [x] HTTP
+- [x] HTTPS
 
 ## Features
 
