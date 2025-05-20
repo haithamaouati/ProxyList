@@ -2,7 +2,7 @@
 
 # 🌐 ProxyList
 
-Lists of HTTP, SOCKS4, SOCKS5 proxies. **Updated every hour**.
+Lists of SOCKS4, SOCKS5, HTTP and HTTPS proxies. **Updated every hour**.
 
 [proxy-list-nine.vercel.app](https://proxy-list-nine.vercel.app/) 
 
