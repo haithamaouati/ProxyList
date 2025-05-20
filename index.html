@@ -122,20 +122,20 @@ footer {
     <div class="badge">Updated Every Hour ⚡️</div>
     <h1>ProxyList.</h1>
     <p class="subtitle">
-      Lists of HTTP, SOCKS4, SOCKS5 proxies.<br>
+      Lists of SOCKS4, SOCKS5, HTTP and HTTPS proxies.<br>
       Updated every hour.
     </p><div class="buttons">
-  <button class="download-btn" onclick="downloadFile('all')">All</button>
+  <button class="download-btn" onclick="downloadFile('socks4')">SOCKS4</button>
+  <button class="download-btn" onclick="downloadFile('socks5')">SOCKS5</button>
   <button class="download-btn" onclick="downloadFile('http')">HTTP</button>
-  <button class="download-btn" onclick="downloadFile('socks4')">Socks4</button>
-  <button class="download-btn" onclick="downloadFile('socks5')">Socks5</button>
+  <button class="download-btn" onclick="downloadFile('https')">HTTPS</button>
 </div>
 
   </main>  <footer>
     Made with &#x2665;&#xfe0f; by <b>Haitham Aouati</b>
   </footer>  <script>
     function downloadFile(type) {
-      const url = `https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/${type}.txt`;
+      const url = `https://raw.githubusercontent.com/ErcinDedeoglu/proxies/main/proxies/${type}.txt`;
       fetch(url)
         .then(res => res.blob())
         .then(blob => {
